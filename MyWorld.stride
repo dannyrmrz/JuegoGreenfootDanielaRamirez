@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="bug" type-java="bug" name="bug" value="new bug()" value-java=" new bug()" enable="true"/>
+                <call expression="addObject(bug,84,186)" expression-java="addObject(bug, 84, 186)" enable="true"/>
+                <variable type="berry" type-java="berry" name="berry" value="new berry()" value-java=" new berry()" enable="true"/>
+                <call expression="addObject(berry,251,85)" expression-java="addObject(berry, 251, 85)" enable="true"/>
+                <variable type="berry" type-java="berry" name="berry2" value="new berry()" value-java=" new berry()" enable="true"/>
+                <call expression="addObject(berry2,407,218)" expression-java="addObject(berry2, 407, 218)" enable="true"/>
+                <variable type="berry" type-java="berry" name="berry3" value="new berry()" value-java=" new berry()" enable="true"/>
+                <call expression="addObject(berry3,209,352)" expression-java="addObject(berry3, 209, 352)" enable="true"/>
+                <call expression="berry2.setLocation(493,87)" expression-java="berry2.setLocation(493, 87)" enable="true"/>
+                <call expression="berry.setLocation(250,51)" expression-java="berry.setLocation(250, 51)" enable="true"/>
+                <call expression="berry2.setLocation(502,137)" expression-java="berry2.setLocation(502, 137)" enable="true"/>
+                <call expression="berry3.setLocation(473,293)" expression-java="berry3.setLocation(473, 293)" enable="true"/>
+                <variable type="berry" type-java="berry" name="berry4" value="new berry()" value-java=" new berry()" enable="true"/>
+                <call expression="addObject(berry4,305,212)" expression-java="addObject(berry4, 305, 212)" enable="true"/>
+                <variable type="berry" type-java="berry" name="berry5" value="new berry()" value-java=" new berry()" enable="true"/>
+                <call expression="addObject(berry5,169,344)" expression-java="addObject(berry5, 169, 344)" enable="true"/>
+                <variable type="snake" type-java="snake" name="snake" value="new snake()" value-java=" new snake()" enable="true"/>
+                <call expression="addObject(snake,372,52)" expression-java="addObject(snake, 372, 52)" enable="true"/>
+                <variable type="snake" type-java="snake" name="snake2" value="new snake()" value-java=" new snake()" enable="true"/>
+                <call expression="addObject(snake2,299,347)" expression-java="addObject(snake2, 299, 347)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
